@@ -90,6 +90,7 @@ header {
     overflow: hidden; 
     display: flex;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
 #homeSection img {
@@ -541,12 +542,38 @@ header.expanded {
         font-size: 1.1rem; 
     }
 
-    .image-grid {
-        grid-template-columns: 1fr; 
-        gap: 20px; 
+    .image-section {
+        display: flex;
+        flex-direction: column; 
+        justify-content: flex-end;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+    }
+
+    .image-section img {
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover; 
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 2rem;
+        text-decoration: underline;
     }
 
     .description {
         font-size: 1rem;
+        line-height: 1.6;
+        text-align: justify;
     }
 }
