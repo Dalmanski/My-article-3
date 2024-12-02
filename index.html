@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTU Canteen</title>
+    <link rel="icon" href="Pictures\CTU_new_logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    
+    <header>
+        <div class="nav-left-side">
+            <div class="logo-svg">
+                <svg viewBox="0 0 60 100" width="1.5rem" height="2.5rem"> <!-- Form J letter -->
+                    <path d="M30,5 l25,0 -10,0 0,75 c0,15 -30,15 -30,-10" fill="none" stroke="white" stroke-width="8"/>
+                </svg>
+                <svg viewBox="0 0 80 100" width="1.5rem" height="2.5rem"> <!-- Form D letter -->
+                    <path d="M10,-10 C100,10 100,100 10,100z" fill="none" stroke="white" stroke-width="10"/>
+                </svg>
+            </div>
+            <div class="nav-title">Articles</div>
+        </div>
+        <div class="expand-btn" onclick="toggleHeader()">Close</div>
+        <nav class="nav-links">
+            <a href="#" id="homeLink">Home</a>
+            <a href="#" id="articleLink">Article</a>
+            <a href="#" id="aboutLink">About</a>
+            <a href="#" id="contactLink">Contact</a>
+            <a href="#" id="loginBtn">Log-in</a>
+        </nav>
+    </header>    
+
+    <div class="section" id="homeSection">
+        <img src="Pictures\Entrance.jpg" alt="Entrance" />
+        <div class="left-side-home">
+            <h1>A Snack to Remember: Enjoying Ngohiong at the CTU Canteen</h1>
+            <p>Let's explore my experience of buying Ngohiong at the CTU Canteen.</p>
+        </div>
+    </div>
+
+    <div class="section" id="articleSection" style="display: none;">
+        
+        <div class="page-title">A Delicious Ngohiong Experience</div>
+        <div class="image-grid">
+
+            <div class="image-section">
+                <img src="Pictures\pic1.jpg" alt="A Boy Watching Ngohiong in the Canteen">
+                <div class="text-content">
+                    <div class="title">A Boy Watching Ngohiong in the Canteen</div>
+                    <div class="description">
+                        The boy stands at the canteen, looking at the tasty Ngohiong on display. Ngohiong is a popular fried food filled with vegetables and sometimes meat. He seems curious and excited about trying it. The crispy look of the Ngohiong grabs his attention immediately.
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-section">
+                <img src="Pictures\pic2.jpg" alt="Buying the Ngohiong">
+                <div class="text-content">
+                    <div class="title">Buying the Ngohiong</div>
+                    <div class="description">
+                        The boy decides to buy the Ngohiong because it looks delicious. He carefully picks one from the tray and pays the vendor. The golden-brown color makes it very tempting. Holding it in his hands, he feels eager to take the first bite.
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-section">
+                <img src="Pictures\pic3.jpg" alt="Eating Ngohiong While Standing">
+                <div class="text-content">
+                    <div class="title">Eating Ngohiong While Standing</div>
+                    <div class="description">
+                        He starts eating the Ngohiong right away, savoring its crispy and flavorful taste. Standing in the canteen, he enjoys each bite with a smile. It’s warm and satisfying, perfect for a quick snack. He finishes it quickly because it’s so tasty.
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-section">
+                <img src="Pictures\pic4.jpg" alt="Throwing the Trash in the Bin">
+                <div class="text-content">
+                    <div class="title">Throwing the Trash in the Bin</div>
+                    <div class="description">
+                        After finishing the Ngohiong, he looks for a trashcan to dispose of the wrapper. He responsibly throws it into the bin to keep the place clean. Taking care of trash shows he values cleanliness. Feeling full and happy, he walks away, ready for the rest of his day.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section" id="aboutSection" style="display: none;">
+        <div class="y-center">
+            <h1>About CTU Canteen</h1>
+            <p>The CTU Canteen provides students, faculty, and staff with affordable and delicious meals throughout the day. Located at the heart of the campus, it serves a variety of nutritious dishes designed to fuel productivity and promote a healthy lifestyle. Whether you’re in the mood for a quick snack or a full meal, the CTU Canteen is the place to go for a satisfying dining experience.</p>
+        </div>
+    </div>
+    
+    <div class="section" id="contactSection" style="display: none;">
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Contact our team</h2>
+                <form>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Phone #:</label>
+                    <input type="text" id="phone" name="phone" required>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Contact Us</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>CTU Danao Information</h2>
+                <p><strong>Address:</strong> Cebu Technological University, Danao City, Cebu, Philippines</p>
+                <p><strong>Contact Number:</strong> (032) 354 3660</p>
+                <p><strong>Email:</strong> info-danao@ctu.edu.ph</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/ctudanaoofficial" target="_blank">
+                        <i class="fab fa-facebook fa-2x social-logo"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@ctupremier2532/featured" target="_blank">
+                        <i class="fab fa-youtube fa-2x social-logo"></i>
+                    </a>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <i>This page was created by Jayrald John Dalman</i>
+    </footer>
+
+    <div id="modal" class="modal">
+        <span id="closeImg" class="close">&times;</span> <!-- Display X at the top right -->
+        <img class="modal-content-in-img" id="modalImg">
+        <div class="modal-caption" id="caption"></div> 
+    </div>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content-in-form">
+            <span id="closeLogin" class="close">&times;</span>
+            <h2>Log-in</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Log-in</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="signupLink">Sign-up here</a></p>
+        </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content-in-form">
+            <span id="closeSignup" class="close">&times;</span>
+            <h2>Sign-up</h2>
+            <form>
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" name="signupEmail" required>
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" name="signupPassword" required>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <button type="submit">Sign-up</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
